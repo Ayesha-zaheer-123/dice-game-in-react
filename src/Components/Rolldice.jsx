@@ -14,7 +14,6 @@ function Rolldice({currentdice,setcurrentdice,getnum}) {
     )
 }
 export default Rolldice
-
 const Dicecontainer =styled.div`
 margin-top:10px;
 display:flex;
@@ -30,7 +29,18 @@ cursor:pointer;
     width: 150px;
     height: 150px;
   }
-
+}
+@media (max-width:480px){
+.dic{
+img{
+width:100px;
+height:100px;
+}
+}
+p{
+font-size:15px;
+text-align:center;
+}
 }
 
 `

@@ -7,10 +7,8 @@ function numberhandler(val) {
     setselectednumber(val);
     seterror(" ");
 }
-
     return(
         <>
-
         <Number>
             <p style={{color:"red"}}>{error}</p>
     <div className="flex">
@@ -36,10 +34,25 @@ align-items:end;
 .flex{
 display:flex;
 gap:20px;
+flex-wrap:wrap;
+justify-content:center;
 }
 p{
 font-size:24px;
 font-weight:700px;
+}
+
+@media (max-width:768px){
+align-items:center;
+}
+
+@media (max-width:480px){
+.flex{
+gap:10px;
+}
+p{
+font-size:18px;
+}
 }
 `
 const Box =styled.div `
@@ -53,5 +66,10 @@ font-size:24px;
 background: ${(props)=>(props.$isselected ? "black" : "white")};
 color: ${(props)=>(props. $isselected ? "white" : "black")};
 font-weight:700;
+@media (max-width:480px){
+height:45px;
+width:45px;
+font-size:18px;
+}
 `
 export default Numberselector

@@ -61,6 +61,8 @@ gap:4px;
 display:flex;
 justify-content:space-around;
 align-items:end;
+flex-wrap:wrap;
+gap:20px;
 }
 .reset-btn{
 background:white;
@@ -80,7 +82,17 @@ justify-content:center;
 gap:8px;
 align-items:center;
 }
-
+@media (max-width:768px){
+padding:8px 15px 15px;
+.topsection{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+}
+@media (max-width:480px){
+padding:8px 10px 15px;
+}
 `
 const Button =styled.button `
 color:white;
@@ -97,7 +109,10 @@ color:black;
 background:white;
 border:1px solid black;
 }
+@media (max-width:480px){
+min-width:180px;
+padding:6px 12px;
+font-size:14px;
+}
 `
-
-
 export default Gameplay

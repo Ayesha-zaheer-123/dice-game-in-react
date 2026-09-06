@@ -20,6 +20,7 @@ const Rulescontainer=styled.div`
 background-color:#FBF1F1;
 padding:10px 20px;
 max-width:500px;
+width:90%;
 margin:8px auto 0;
 border-radius:8px;
 h2{
@@ -30,6 +31,16 @@ margin:0;
 margin-top:6px;
 p { margin: 3px 0; font-size: 14px; }
 
+}
+@media (max-width:480px){
+h2{
+font-size:16px;
+}
+.text{
+p{
+font-size:13px;
+}
+}
 }
 `
 export default Rules

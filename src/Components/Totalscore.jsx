@@ -20,5 +20,18 @@ p{
 font-size:18px;
 font-weight:500px;
 }
+@media (max-width:768px){
+h1{
+font-size:56px;
+}
+p{
+font-size:16px;
+}
+}
+@media (max-width:480px){
+h1{
+font-size:40px;
+}
+}
 `
 export default Totalscore
